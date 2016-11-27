@@ -1,0 +1,30 @@
+name: GoldIsMoney
+main: com.sqeegie.goldismoney.GoldIsMoney
+version: 1.3.0
+description: Economy driven by inventory gold.
+author: flobi, Sqeegie
+website: http://dev.bukkit.org/server-mods/goldismoney/
+
+database: false
+
+commands:
+  goldismoney:
+    description: General GoldIsMoney admin interface. 
+    usage: |
+           /<command> reload - Reload GoldIsMoney config.
+  money:
+    description: Display worth of current inventory. 
+    usage: |
+           /<command> - Display worth of current inventory.
+  balance:
+    description: Display worth of current inventory. 
+    usage: |
+           /<command> - Display worth of current inventory.
+
+permissions:
+  goldismoney.admin:
+    description: Admin functions for GoldIsMoney.
+    default: OP
+  goldismoney.use:
+    description: Allow gold to be money.
+    default: true
