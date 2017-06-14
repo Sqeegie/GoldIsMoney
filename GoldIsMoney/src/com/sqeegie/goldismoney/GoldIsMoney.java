@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.ObjectInput;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutput;
@@ -473,7 +474,7 @@ public class GoldIsMoney extends JavaPlugin {
 	 
 		// Look for defaults in the jar
 	    if (defConfigStream != null) {
-	        defConfig = YamlConfiguration.loadConfiguration(defConfigStream);
+	    	defConfig = YamlConfiguration.loadConfiguration(new InputStreamReader(defConfigStream));
 	        defConfigStream = null;
 	    }
 	    if (defConfig != null) {
