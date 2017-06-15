@@ -1,8 +1,8 @@
 name: GoldIsMoney
-main: com.flobi.GoldIsMoney.GoldIsMoney
-version: 2.0.4
+main: com.flobi.GoldIsMoney2.GoldIsMoney
+version: 2.0.4r2
 description: Economy driven by inventory gold.
-author: flobi, Sqeegie
+author: [flobi, Sqeegie]
 website: http://dev.bukkit.org/server-mods/goldismoney/
 database: false
 commands:
@@ -16,7 +16,7 @@ commands:
     usage: |
            /<command> - Display worth of current inventory.
   balance:
-    description: Display worth of current inventory. 
+    description: Display worth of current inventory.
     aliases: bal
     usage: |
            /<command> - Display worth of current inventory.
@@ -26,5 +26,3 @@ permissions:
     default: OP
   goldismoney.use:
     description: Allow gold to be money.
-    default: true
-    
